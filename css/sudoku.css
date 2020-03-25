@@ -1,0 +1,113 @@
+table.sudoku_table {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: #696969 solid 2px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.sudoku_table td {
+    height: 30px;
+    width: 30px;
+}
+
+table.sudoku_table td input {
+    -webkit-appearance: none;
+    transition: all 0.2s ease-out;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Times New Roman;
+}
+
+table.sudoku_table td input.user_edit {
+    color: #1E90FF;
+}
+
+table.sudoku_table td input.user_edit.user_error {
+    color: #F00000;
+}
+
+table.sudoku_table td.thin_left {
+    border-left: #DCDCDC solid 1px;
+}
+
+table.sudoku_table td.heavy_left {
+    border-left: #696969 solid 2px;
+}
+
+table.sudoku_table td.thin_top {
+    border-top: #DCDCDC solid 1px;
+}
+
+table.sudoku_table td.heavy_top {
+    border-top: #696969 solid 2px;
+}
+
+.sudoku_btns {
+    padding-top: 20px;
+}
+
+input.sudoku_btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-appearance: none;
+    width: auto;
+    height: 35px;
+    line-height: auto;
+    border: 2px solid #696969;
+    border-radius: 5%;
+    text-decoration: none;
+    background: none;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 0 3px 0 3px;
+    text-align: center;
+    outline: none;
+}
+
+input.sudoku_btn.first {
+    float: left;
+}
+
+input.sudoku_btn.second {
+    margin-left: 5px;
+}
+
+input.sudoku_btn.third {
+    margin-left: 5px;
+}
+
+input.sudoku_btn.last {
+    float: right;
+}
+
+/* Disable hover on small devices */
+@media(min-width: 600px) {
+    input.sudoku_btn.first:hover {
+	background: #1E90FF;
+    }
+
+    input.sudoku_btn.second:hover {
+	background: #FF9933;
+    }
+
+    input.sudoku_btn.third:hover {
+	background: #FF6666;
+    }
+
+    input.sudoku_btn.last:hover {
+	background: #33CC33;
+    }
+
+    input.sudoku_btn:hover {
+      color: white;
+    }
+}

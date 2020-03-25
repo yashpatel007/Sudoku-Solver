@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>SUDOKU GAME</title>
+    <!-- import the css we have written -->
+    <link href="css/sudoku.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" media="all" rel="stylesheet" type="text/css"/>
+    <!-- get the fonts from the google api -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Import our JS -->
+    <script src="js/sudoku.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+</head>
+<body>
+
+<div>
+<!-- In this div our sudoku is gonna reside -->
+<div id="board"></div>
+
+
+<h1>SUDOKU GAME</h1>
+</div>
+<script type="text/javascript">
+    var board = document.getElementById('board');
+    var sudoku = new Sudoku(board);
+    // sudoku.test();
+</script>
+</body>
+</html>
